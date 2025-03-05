@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-center bg-[#F4FFC3] min-h-screen flex flex-col items-center">
+
+  <!------ Heading ----->
+  <h1 class="text-3xl sm:text-4xl font-bold bg-[#081b31] text-white w-full py-6">Rock Paper Scissors</h1>
+
+  <!------ Options ----->
+  <div class="choices flex flex-wrap justify-center gap-6 py-16">
+    <div class="choice h-32 w-32 sm:h-40 sm:w-40 hover:bg-[#081b31] flex items-center justify-center rounded-full" id="rock">
+        <img class="h-28 w-28 sm:h-36 sm:w-36 object-cover rounded-full cursor-pointer" src="image/rock.png" alt="">
+    </div>
+    <div class="choice h-32 w-32 sm:h-40 sm:w-40 hover:bg-[#081b31] flex items-center justify-center rounded-full" id="paper">
+        <img class="h-28 w-28 sm:h-36 sm:w-36 object-cover rounded-full cursor-pointer" src="image/paper.png" alt="">
+    </div>
+    <div class="choice h-32 w-32 sm:h-40 sm:w-40 hover:bg-[#081b31] flex items-center justify-center rounded-full" id="scissors">
+        <img class="h-28 w-28 sm:h-36 sm:w-36 object-cover rounded-full cursor-pointer" src="image/scissors.png" alt="">
+    </div>
+  </div>
+
+  <!------ Score Board ----->
+  <div class="score-board flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-20 text-2xl sm:text-4xl">
+    <!------- User Score ------->
+    <div class="score">
+        <p id="user-score" class="text-6xl sm:text-7xl">0</p>
+        <p>You</p>
+    </div>
+    <!------- Computer Score ------->
+    <div class="score">
+        <p id="comp-score" class="text-6xl sm:text-7xl">0</p>
+        <p>Computer</p>
+    </div>
+  </div>
+
+  <!------ Message ----->
+  <div class="msg-container mt-12">
+    <p id="msg" class="bg-[#081b31] text-white text-2xl sm:text-4xl inline-block px-6 py-4 rounded-2xl">Play your next move</p>
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>
