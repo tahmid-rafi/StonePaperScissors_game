@@ -8,8 +8,8 @@ const userScorePara = document.querySelector('#user-score'); // Access user scor
 const compScorePara = document.querySelector('#comp-score'); // Access computer score
 
 // Add color to scores
-userScorePara.style.color = "#AC1754";
-compScorePara.style.color = "#211C84";
+userScorePara.style.color = "#211C84";
+compScorePara.style.color = "#AC1754";
 
 // Function to generate computer choice
 const genCompChoice = () => {
